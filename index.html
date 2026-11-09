@@ -44,6 +44,7 @@
   } }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  .report { scroll-margin-top: 1.5rem; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
   body {
     margin: 0; background: var(--paper); color: var(--ink);
@@ -237,7 +238,7 @@
   <div class="wrap">
     <section class="block" id="research" aria-labelledby="research-title">
       <h2 id="research-title">Research</h2>
-      <article class="report research-report">
+      <article class="report research-report" id="research-llm">
         <aside>
           <h3>Multi-agent LLM investment teams</h3>
           <p class="when">Sep 2026 to present, advised by Professor Robert Carroll</p>
@@ -265,7 +266,7 @@
         </div>
       </div>
       <!-- Systematic FX -->
-      <article class="report">
+      <article class="report" id="systematic">
         <aside>
           <h3>Systematic FX trading research</h3>
           <p class="when">Aug 2026 to present, six-person graduate team</p>
@@ -305,7 +306,7 @@
       </article>
 
       <!-- PD -->
-      <article class="report">
+      <article class="report" id="credit-risk">
         <aside>
           <h3>Credit risk: probability of default</h3>
           <p class="when">May to Aug 2026</p>
@@ -335,7 +336,7 @@
       </article>
 
       <!-- Optiver -->
-      <article class="report">
+      <article class="report" id="optiver">
         <aside>
           <h3>Optiver: Nasdaq closing auction</h3>
           <p class="when">2025, Kaggle competition data</p>
@@ -357,7 +358,7 @@
       </article>
 
       <!-- Options -->
-      <article class="report">
+      <article class="report" id="options">
         <aside>
           <h3>Options pricing and the Greeks</h3>
           <p class="when">2025</p>
@@ -389,7 +390,7 @@
       </article>
 
       <!-- LSTM -->
-      <article class="report">
+      <article class="report" id="lstm">
         <aside>
           <h3>LSTM stock forecasting</h3>
           <p class="when">2025</p>
